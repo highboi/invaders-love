@@ -102,6 +102,7 @@ function checkCollisions(enemies, bullets)
 		for _, b in pairs(bullets) do
 			if b.y <= e.y + e.height and b.x > e.x and b.x < e.x + e.width then
 				table.remove(enemies_controller.enemies, i)
+				table.remove(player.bullets, _)
 			end
 		end
 	end
